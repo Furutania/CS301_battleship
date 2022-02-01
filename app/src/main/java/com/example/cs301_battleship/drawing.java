@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
@@ -40,6 +41,8 @@ public class drawing extends SurfaceView {
     @Override
     public void onDraw(Canvas canvas){
         super.onDraw(canvas);
+        Matrix matrix = new Matrix();
+        matrix.postRotate(90);
 
         //FLOAT - like a double but half the number of bits
         //drawOval(x,y x2, y2, paint);
@@ -52,8 +55,8 @@ public class drawing extends SurfaceView {
 
         //CREATES 5 hp BS
         Bitmap fivehp = BitmapFactory.decodeResource(getResources(), R.drawable.fivehpbs);
-        fivehp =  Bitmap.createScaledBitmap(fivehp, 450, 500, false);
-
+        fivehp =  Bitmap.createScaledBitmap(fivehp, 350, 500, false);
+        fivehp = Bitmap.createBitmap(fivehp, 0, 0, fivehp.getWidth(), fivehp.getHeight(), matrix, true);
         //CREATES 4 hp BS #1
         Bitmap fourhp1 = BitmapFactory.decodeResource(getResources(), R.drawable.fourhpbs);
         fourhp1 =  Bitmap.createScaledBitmap(fourhp1, 350, 500, false);
