@@ -1,5 +1,14 @@
 package com.example.cs301_battleship;
 
+/**
+ * coordinates - A representation of the coordinates on a Battleship board.
+ *
+ * @author Austen Furutani
+ * @author Keoni Han
+ * @author Steven Lee
+ * @author Tyler Santos
+ * @version Spring 2022 - 2/22/22
+ */
 public class coordinates {
     private boolean hit;
     private boolean hasShip;
