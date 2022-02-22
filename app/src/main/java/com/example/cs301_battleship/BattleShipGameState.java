@@ -22,7 +22,7 @@ public class BattleShipGameState {
 
     public BattleShipGameState(BattleShipGameState copy) {
         this.playerID = copy.playerID;
-        this.playersBoard = copy.playersBoard;
+        this.playersBoard = new board(copy.playersBoard);
         this.playersTurn = copy.playersTurn;
         this.timer = copy.timer;
         this.phase = copy.phase;
