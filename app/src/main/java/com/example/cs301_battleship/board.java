@@ -1,5 +1,14 @@
 package com.example.cs301_battleship;
-
+/**
+ * board - Contains a 2d array of coordinates, each coordinate has two booleans
+ * hit and hasShip from.
+ *
+ * @author Austen Furutani
+ * @author Keoni Han
+ * @author Steven Lee
+ * @author Tyler Santos
+ * @version Spring 2022 - 2/22/22
+ */
 public class board extends coordinates {
     private coordinates currentBoard[][] = new coordinates[10][10];
 
