@@ -9,24 +9,24 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
-public class drawing extends SurfaceView {
+public class playerBoard extends SurfaceView {
 
     private Paint blackPaint = new Paint();
 
 
-    public drawing(Context context) {//default constructor,
+    public playerBoard(Context context) {//default constructor,
         super(context);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public drawing(Context context, AttributeSet attirs){
+    public playerBoard(Context context, AttributeSet attirs){
         super(context, attirs);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public drawing(Context context, AttributeSet attirs, int defStyle){
+    public playerBoard(Context context, AttributeSet attirs, int defStyle){
         super(context, attirs, defStyle);
         initPaints();
         setWillNotDraw(false);//sets visible
@@ -56,6 +56,15 @@ public class drawing extends SurfaceView {
         //CREATES 5 hp BS
         Bitmap fivehp = BitmapFactory.decodeResource(getResources(), R.drawable.fivehpbs);
         fivehp =  Bitmap.createScaledBitmap(fivehp, 350, 500, false);
+        /**
+         External Citation
+         Date: 31 January 2022
+         Problem: Couldnt rotate Bitmap
+         Resource:
+         https://stackoverflow.com/questions/9015372/how-to-rotate-a-bitmap-90-degrees/29369579
+         Solution: I used the example code from this post.
+         */
+
         fivehp = Bitmap.createBitmap(fivehp, 0, 0, fivehp.getWidth(), fivehp.getHeight(), matrix, true);
         //CREATES 4 hp BS #1
         Bitmap fourhp1 = BitmapFactory.decodeResource(getResources(), R.drawable.fourhpbs);
@@ -86,6 +95,11 @@ public class drawing extends SurfaceView {
         Bitmap whiteMarker = BitmapFactory.decodeResource(getResources(), R.drawable.missmarker);
         whiteMarker =  Bitmap.createScaledBitmap(whiteMarker, 100, 75, false);
 
+
+        /**
+         * Draws everything to surface view, as of now COOR is just giberish and guess work, will work out
+         * a formula later
+         */
         canvas.drawBitmap(grid, 0.0f, 0.0f, new Paint());
         canvas.drawBitmap(fivehp, 0.0f, 0.0f, new Paint());
         canvas.drawBitmap(fourhp1, -25.0f, -110.0f, new Paint());

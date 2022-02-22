@@ -8,24 +8,24 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
-public class drawingFloatingShips extends SurfaceView {
+public class drawFloatingShips extends SurfaceView {
 
     private Paint blackPaint = new Paint();
 
 
-    public drawingFloatingShips(Context context) {//default constructor,
+    public drawFloatingShips(Context context) {//default constructor,
         super(context);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public drawingFloatingShips(Context context, AttributeSet attirs){
+    public drawFloatingShips(Context context, AttributeSet attirs){
         super(context, attirs);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public drawingFloatingShips(Context context, AttributeSet attirs, int defStyle){
+    public drawFloatingShips(Context context, AttributeSet attirs, int defStyle){
         super(context, attirs, defStyle);
         initPaints();
         setWillNotDraw(false);//sets visible
