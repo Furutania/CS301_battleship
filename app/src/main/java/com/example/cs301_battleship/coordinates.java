@@ -23,7 +23,9 @@ public class coordinates {
         return this.hasShip;
     }
 
-
+    public boolean getHit() {
+        return this.hit;
+    }
 
 
 }

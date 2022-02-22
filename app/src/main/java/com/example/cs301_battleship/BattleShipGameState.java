@@ -29,6 +29,14 @@ public class BattleShipGameState {
         this.remainingShips = copy.remainingShips;
     }
 
+    public boolean canFire(int row, int col) {
+        boolean isHit = playersBoard.getCoordHit(row, col);
+        if (isHit == true) {
+            return false;
+        }
+        return true;
+    }
+
     @Override
     public String toString() {
         if (playersTurn == true) {
