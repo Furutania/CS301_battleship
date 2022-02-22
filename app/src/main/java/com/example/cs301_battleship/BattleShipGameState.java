@@ -2,7 +2,7 @@ package com.example.cs301_battleship;
 
 public class BattleShipGameState {
     String playerID;
-    Board playersBoard;
+    board playersBoard;
     boolean playersTurn;
     int timer;
     // 0 = setup | 1 = game phase | 2 = end phase
@@ -11,7 +11,7 @@ public class BattleShipGameState {
 
 
 
-    public BattleShipGameState(String playerID, Board playersBoard, boolean playersTurn, int timer, int phase, int remainingShips) {
+    public BattleShipGameState(String playerID, board playersBoard, boolean playersTurn, int timer, int phase, int remainingShips) {
         this.playerID = playerID;
         this.playersBoard = playersBoard;
         this.playersTurn = playersTurn;
