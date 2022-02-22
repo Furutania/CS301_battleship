@@ -1,5 +1,15 @@
 package com.example.cs301_battleship;
 
+/**
+ * BattleShipGameState - Contains the state of a BattleShipGame. Sent by the game
+ * when a play wants to enquire about the state of the game.
+ *
+ * @author Austen Furutani
+ * @author Keoni Han
+ * @author Steven Lee
+ * @author Tyler Santos
+ * @version Spring 2022 - 2/22/22
+ */
 public class BattleShipGameState {
     private String playerID;
     private board playersBoard;
