@@ -27,5 +27,9 @@ public class board extends coordinates {
 
  }
 
+ public boolean getCoordHit(int row, int col){
+        return this.currentBoard[row][col].getHit();
+ }
+
 
 }
