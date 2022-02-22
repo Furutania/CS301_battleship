@@ -24,10 +24,20 @@ public class BattleShipGameState {
         this.playerID = copy.playerID;
         this.playersBoard = copy.playersBoard;
         this.playersTurn = copy.playersTurn;
-        this.timer = copy.timer;;
+        this.timer = copy.timer;
         this.phase = copy.phase;
         this.remainingShips = copy.remainingShips;
     }
+
+    @Override
+    public String toString() {
+        if (playersTurn == true) {
+            return "It is " + playerID + "'s turn." + playerID + "has " + remainingShips + " remaining.";
+        }
+        return "It is not " + playerID + "'s turn.";
+    }
+
+
 
 
 }
