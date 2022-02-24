@@ -49,7 +49,7 @@ public class board extends coordinates {
      * @param col
      * @param hit
      */
- public boolean setCoorhit(int row, int col, boolean hit){
+ public boolean setCoordHit(int row, int col, boolean hit){
      if(getCoordHit(row, col) == false) {
          this.currentBoard[row][col].setHit(hit);
          return true;
@@ -66,6 +66,5 @@ public class board extends coordinates {
  public boolean getCoordHit(int row, int col){
         return this.currentBoard[row][col].getHit();
  }
-
 
 }

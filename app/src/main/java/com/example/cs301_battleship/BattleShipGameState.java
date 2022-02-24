@@ -21,7 +21,8 @@ public class BattleShipGameState {
 
 
     // basic constructor
-    public BattleShipGameState(String playerID, board playersBoard, boolean playersTurn, int timer, int phase, int remainingShips) {
+    public BattleShipGameState(String playerID, board playersBoard, boolean playersTurn, int timer,
+                               int phase, int remainingShips) {
         this.playerID = playerID;
         this.playersBoard = playersBoard;
         this.playersTurn = playersTurn;
@@ -40,17 +41,22 @@ public class BattleShipGameState {
         this.remainingShips = copy.remainingShips;
     }
 
-    // if true, then player can fire. if false, then player can't fire
+    // if true, then player can fire and will set coordinate as if it were hit. if false,
+    // then player can't fire
     public boolean canFire(int row, int col) {
-        boolean isHit = playersBoard.getCoordHit(row, col);
+        boolean isHit = this.playersBoard.getCoordHit(row, col);
         if (isHit == true) {
             return false;
         }
-        return true;
+        else {
+            this.playersBoard.setCoordHit(row, col, true);
+            return true;
+        }
     }
 
     @Override
-    // returns the number of ships remaining for the player if it is their turn or returns that it is not their turn
+    // returns the number of ships remaining for the player if it is their turn or
+    // returns that it is not their turn
     public String toString() {
         if (playersTurn == true) {
             return "It is " + playerID + "'s turn." + playerID + "has " + remainingShips + " remaining.";

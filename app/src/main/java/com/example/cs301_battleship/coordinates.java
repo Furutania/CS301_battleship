@@ -14,7 +14,7 @@ public class coordinates {
     private boolean hasShip;
 
     /**
-     * creates a coordinate object setting its
+     * creates a coordinate object setting its instance variables
      * @param hit
      * @param hasShip
      */
