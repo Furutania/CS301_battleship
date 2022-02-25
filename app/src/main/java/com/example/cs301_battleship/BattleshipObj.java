@@ -12,7 +12,7 @@ import android.util.Log;
  * @author Tyler Santos
  * @version Spring 2022 - 2/22/22
  */
-
+//hi
 public class BattleshipObj {
     private int size;
     private boolean sunk;
