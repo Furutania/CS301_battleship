@@ -48,6 +48,29 @@ public class BattleshipObj {
             }
         }
         //ship sunk
+        setSunk(true);
         return true;
+    }
+
+
+
+    public int getSize() {
+        return size;
+    }
+    public boolean getSunk() {
+        return sunk;
+    }
+    public Coordinates[] getLocation() {
+        return location;
+    }
+
+    public void setSize(int size){
+        this.size = size;
+    }
+    public void setSunk(boolean sunk){
+        this.sunk = sunk;
+    }
+    public void setLocation(Coordinates[] location) {
+        this.location = location;
     }
 }

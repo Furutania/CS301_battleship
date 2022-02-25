@@ -90,4 +90,6 @@ public class Coordinates {
         return this.hasShip;
     }
 
+
+
 }
