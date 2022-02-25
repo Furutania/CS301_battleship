@@ -11,17 +11,18 @@ package com.example.cs301_battleship;
  * @version Spring 2022 - 2/22/22
  */
 public class BattleShipGameState {
-    private int playerID;
+    private int[] playerID;
     private GameBoard playersBoard;
     private int playersTurn;
     private int timer;
     // 0 = setup | 1 = game phase | 2 = end phase
     private int phase;
     private int remainingShips;
+    private BattleshipObj[][] playersFleet = new BattleshipObj[playerID.length][6];
 
 
     // basic constructor
-    public BattleShipGameState(int playerID, GameBoard playersBoard, int playersTurn, int timer,
+    public BattleShipGameState(int[] playerID, GameBoard playersBoard, int playersTurn, int timer,
                                int phase, int remainingShips) {
         this.playerID = playerID;
         this.playersBoard = playersBoard;

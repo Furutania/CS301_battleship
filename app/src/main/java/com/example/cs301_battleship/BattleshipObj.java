@@ -2,6 +2,17 @@ package com.example.cs301_battleship;
 
 import android.util.Log;
 
+/**
+ * BattleshipObj
+ * Creates a battleship object, storing its location, its size, and if its been sunk
+ *
+ * @author Austen Furutani
+ * @author Keoni Han
+ * @author Steven Lee
+ * @author Tyler Santos
+ * @version Spring 2022 - 2/22/22
+ */
+
 public class BattleshipObj {
     private int size;
     private boolean sunk;
