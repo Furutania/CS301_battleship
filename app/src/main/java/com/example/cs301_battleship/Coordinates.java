@@ -12,15 +12,20 @@ package com.example.cs301_battleship;
 public class Coordinates {
     private boolean hit;
     private boolean hasShip;
+    private int x;
+    private int y;
+
 
     /**
      * creates a coordinate object setting its instance variables
      * @param hit
      * @param hasShip
      */
-    public Coordinates(boolean hit, boolean hasShip){
+    public Coordinates(boolean hit, boolean hasShip, int x, int y){
         this.hit = hit;
         this.hasShip = hasShip;
+        this.x = x;
+        this.y = y;
     }
 
     /**
@@ -38,6 +43,8 @@ public class Coordinates {
     public Coordinates(Coordinates orig){
         this.hit = orig.hit;
         this.hasShip = orig.hasShip;
+        this.x = orig.x;
+        this.y = orig.y;
     }
 
     /**
@@ -51,13 +58,30 @@ public class Coordinates {
         return this.hasShip;
     }
 
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
     /**
      * returns a boolean, if the coordinate has already been hit.
      * @return bool of hit
      */
+
+
+
     public boolean getHit() {
         return this.hit;
     }
 
+    public int getX() {
+        return x;
+    }
 
+    public int getY() {
+        return y;
+    }
 }
