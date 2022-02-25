@@ -46,15 +46,15 @@ public class DrawEnemyBoard extends SurfaceView{
 
         //Draws the board for the use will use to select and play their move
         Bitmap grid = BitmapFactory.decodeResource(getResources(), R.drawable.updatedgrid);
-        grid =  Bitmap.createScaledBitmap(grid, 1200, 1150, false);
+        grid =  Bitmap.createScaledBitmap(grid, 1500, 1500, false);
 
         //When user hits a ship a red marker will be placed
         Bitmap redMarker = BitmapFactory.decodeResource(getResources(), R.drawable.hitmarker);
-        redMarker =  Bitmap.createScaledBitmap(redMarker, 200, 150, false);
+        redMarker =  Bitmap.createScaledBitmap(redMarker, 300, 250, false);
 
         //A missed shot will be indicated with a white marker
         Bitmap whiteMarker = BitmapFactory.decodeResource(getResources(), R.drawable.missmarker);
-        whiteMarker =  Bitmap.createScaledBitmap(whiteMarker, 200, 150, false);
+        whiteMarker =  Bitmap.createScaledBitmap(whiteMarker, 300, 250, false);
 
         //When the user selects their move the COOR will be identified with a target
         Bitmap userSelection = BitmapFactory.decodeResource(getResources(), R.drawable.tagetselector);
@@ -67,9 +67,9 @@ public class DrawEnemyBoard extends SurfaceView{
          */
 
         canvas.drawBitmap(grid, 0.0f, 0.0f, new Paint());
-        canvas.drawBitmap(whiteMarker, 140.0f, 250.0f, new Paint());
-        canvas.drawBitmap(redMarker, 410.0f, 250.0f, new Paint());
-        canvas.drawBitmap(userSelection, 410.0f, 325.0f, new Paint());
+        canvas.drawBitmap(whiteMarker, 150.0f, 290.0f, new Paint());
+        canvas.drawBitmap(redMarker, 490.0f, 290.0f, new Paint());
+        canvas.drawBitmap(userSelection, 540.0f, 450.0f, new Paint());
     }
 
 }
