@@ -2,6 +2,17 @@ package com.example.cs301_battleship;
 
 import android.util.Log;
 
+/**
+ * BattleshipObj
+ * Creates a battleship object, storing its location, its size, and if its been sunk
+ *
+ * @author Austen Furutani
+ * @author Keoni Han
+ * @author Steven Lee
+ * @author Tyler Santos
+ * @version Spring 2022 - 2/22/22
+ */
+
 public class BattleshipObj {
     private int size;
     private boolean sunk;
@@ -37,6 +48,29 @@ public class BattleshipObj {
             }
         }
         //ship sunk
+        setSunk(true);
         return true;
+    }
+
+
+
+    public int getSize() {
+        return size;
+    }
+    public boolean getSunk() {
+        return sunk;
+    }
+    public Coordinates[] getLocation() {
+        return location;
+    }
+
+    public void setSize(int size){
+        this.size = size;
+    }
+    public void setSunk(boolean sunk){
+        this.sunk = sunk;
+    }
+    public void setLocation(Coordinates[] location) {
+        this.location = location;
     }
 }

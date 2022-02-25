@@ -58,6 +58,8 @@ public class Coordinates {
         return this.hasShip;
     }
 
+
+
     public void setX(int x) {
         this.x = x;
     }
@@ -84,4 +86,10 @@ public class Coordinates {
     public int getY() {
         return y;
     }
+    public boolean getHasShip(){
+        return this.hasShip;
+    }
+
+
+
 }
