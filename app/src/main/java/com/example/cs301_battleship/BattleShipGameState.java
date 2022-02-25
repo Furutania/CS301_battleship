@@ -11,9 +11,9 @@ package com.example.cs301_battleship;
  * @version Spring 2022 - 2/22/22
  */
 public class BattleShipGameState {
-    private String playerID;
+    private int playerID;
     private GameBoard playersBoard;
-    private boolean playersTurn;
+    private int playersTurn;
     private int timer;
     // 0 = setup | 1 = game phase | 2 = end phase
     private int phase;
@@ -21,7 +21,7 @@ public class BattleShipGameState {
 
 
     // basic constructor
-    public BattleShipGameState(String playerID, GameBoard playersBoard, boolean playersTurn, int timer,
+    public BattleShipGameState(int playerID, GameBoard playersBoard, int playersTurn, int timer,
                                int phase, int remainingShips) {
         this.playerID = playerID;
         this.playersBoard = playersBoard;
@@ -58,8 +58,8 @@ public class BattleShipGameState {
     // returns the number of ships remaining for the player if it is their turn or
     // returns that it is not their turn
     public String toString() {
-        if (playersTurn == true) {
-            return "It is " + playerID + "'s turn." + playerID + "has " + remainingShips + " remaining.";
+        if (playersTurn == this.playersTurn) {
+            return "It is " + "PlayerID: " + playerID + "'s turn." + playerID + "has " + remainingShips + " remaining.";
         }
         return "It is not " + playerID + "'s turn.";
     }
