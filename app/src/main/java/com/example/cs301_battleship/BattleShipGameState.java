@@ -55,6 +55,18 @@ public class BattleShipGameState {
         }
     }
 
+    //Checks to see if the coordinates the player has picked are in bounds of board and a ship isn't already placed there
+    public void placeShip(BattleshipObj ship, Coordinates[] toPlace) {
+        int i;
+        for (i = 0; i < toPlace.length; i++) {
+            if (toPlace[i].getHasShip() == false &&
+                    toPlace[i].getX() <= 10 && toPlace[i].getY() <= 10 &&
+                    toPlace[i].getX() >= 1 && toPlace[i].getY() >= 1) {
+                ship.setLocation(toPlace);
+            }
+        }
+    }
+
     @Override
     // returns the number of ships remaining for the player if it is their turn or
     // returns that it is not their turn
