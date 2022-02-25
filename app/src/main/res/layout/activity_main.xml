@@ -2,7 +2,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/battleshipbackground"
     android:orientation="horizontal">
@@ -97,7 +97,7 @@
                 android:textColor="@color/black"
                 android:textSize="40dp" />
 
-            <com.example.cs301_battleship.playerBoard
+            <com.example.cs301_battleship.DrawPlayerBoard
                 android:id="@+id/surfaceView"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
@@ -119,12 +119,10 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="750dp"
-                android:layout_height="750dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="100dp"
-                android:orientation="vertical"
-                android:translationX="-25dp"
-                android:translationY="-100dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/enemyFleetLabel"
@@ -136,15 +134,15 @@
                     android:textColor="@color/black"
                     android:textSize="40dp" />
 
-                <com.example.cs301_battleship.EnemyBoard
+                <com.example.cs301_battleship.DrawPlayerBoard
                     android:id="@+id/enemyBoard"
-                    android:layout_width="750dp"
-                    android:layout_height="750dp"
+                    android:layout_width="600dp"
+                    android:layout_height="600dp"
                     android:layout_gravity="center" />
 
             </LinearLayout>
 
-            <com.example.cs301_battleship.drawFloatingShips
+            <com.example.cs301_battleship.DrawFloatingShips
                 android:id="@+id/floatingShips"
                 android:layout_width="100dp"
                 android:layout_height="600dp"
@@ -156,8 +154,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:backgroundTint="#FF5722"
-                android:text="||"
-                android:translationX="-100dp" />
+                android:text="||" />
 
         </LinearLayout>
 
