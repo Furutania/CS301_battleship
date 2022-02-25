@@ -9,24 +9,24 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
-public class playerBoard extends SurfaceView {
+public class DrawPlayerBoard extends SurfaceView {
 
     private Paint blackPaint = new Paint();
 
 
-    public playerBoard(Context context) {//default constructor,
+    public DrawPlayerBoard(Context context) {//default constructor,
         super(context);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public playerBoard(Context context, AttributeSet attirs){
+    public DrawPlayerBoard(Context context, AttributeSet attirs){
         super(context, attirs);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public playerBoard(Context context, AttributeSet attirs, int defStyle){
+    public DrawPlayerBoard(Context context, AttributeSet attirs, int defStyle){
         super(context, attirs, defStyle);
         initPaints();
         setWillNotDraw(false);//sets visible

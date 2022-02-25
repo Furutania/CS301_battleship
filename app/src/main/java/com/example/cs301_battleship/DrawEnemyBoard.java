@@ -6,23 +6,23 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
-public class EnemyBoard extends SurfaceView{
+public class DrawEnemyBoard extends SurfaceView{
 
     private Paint blackPaint = new Paint();
 
-    public EnemyBoard(Context context) {//default constructor,
+    public DrawEnemyBoard(Context context) {//default constructor,
         super(context);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public EnemyBoard(Context context, AttributeSet attirs){
+    public DrawEnemyBoard(Context context, AttributeSet attirs){
         super(context, attirs);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public EnemyBoard(Context context, AttributeSet attirs, int defStyle){
+    public DrawEnemyBoard(Context context, AttributeSet attirs, int defStyle){
         super(context, attirs, defStyle);
         initPaints();
         setWillNotDraw(false);//sets visible

@@ -9,8 +9,8 @@ package com.example.cs301_battleship;
  * @author Tyler Santos
  * @version Spring 2022 - 2/22/22
  */
-public class board extends coordinates {
-    private coordinates currentBoard[][] = new coordinates[10][10];
+public class GameBoard extends Coordinates {
+    private Coordinates currentBoard[][] = new Coordinates[10][10];
 
     /**
      * Default constructor for the board
@@ -18,11 +18,11 @@ public class board extends coordinates {
      * coordinate object with two false values one for hit(if the coordinate has been fired at)
      * and one for hasShip(Identifying if the coordinate houses a ship)
      */
-    public board(){
+    public GameBoard(){
         int i,j;
         for (i = 1; i <= 10; i++){
             for(j = 1; i <= 10; j++){
-                this.currentBoard[i][j] = new coordinates(false, false);
+                this.currentBoard[i][j] = new Coordinates(false, false);
             }
         }
     }
@@ -34,11 +34,11 @@ public class board extends coordinates {
      * a copy of the originals coordinate values
      * @param orig
      */
-    public board(board orig){ //copy constructor
+    public GameBoard(GameBoard orig){ //copy constructor
         int i,j;
         for (i = 1; i <= 10; i++){
             for(j = 1; i <= 10; j++){
-                this.currentBoard[i][j] = new coordinates(orig.currentBoard[i][j]);
+                this.currentBoard[i][j] = new Coordinates(orig.currentBoard[i][j]);
             }
         }
     }

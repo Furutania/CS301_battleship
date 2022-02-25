@@ -9,7 +9,7 @@ package com.example.cs301_battleship;
  * @author Tyler Santos
  * @version Spring 2022 - 2/22/22
  */
-public class coordinates {
+public class Coordinates {
     private boolean hit;
     private boolean hasShip;
 
@@ -18,7 +18,7 @@ public class coordinates {
      * @param hit
      * @param hasShip
      */
-    public coordinates(boolean hit, boolean hasShip){
+    public Coordinates(boolean hit, boolean hasShip){
         this.hit = hit;
         this.hasShip = hasShip;
     }
@@ -26,7 +26,7 @@ public class coordinates {
     /**
      * default constructor for coordinate sets hit and hasShip to false
      */
-    public coordinates(){ //default constructor
+    public Coordinates(){ //default constructor
         this.hit = false;
         this.hasShip = false;
     }
@@ -35,7 +35,7 @@ public class coordinates {
      * Copy contructor, creates a copy of the passed in coordinate object
      * @param orig
      */
-    public coordinates(coordinates orig){
+    public Coordinates(Coordinates orig){
         this.hit = orig.hit;
         this.hasShip = orig.hasShip;
     }

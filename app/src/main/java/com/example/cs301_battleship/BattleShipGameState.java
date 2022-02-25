@@ -12,7 +12,7 @@ package com.example.cs301_battleship;
  */
 public class BattleShipGameState {
     private String playerID;
-    private board playersBoard;
+    private GameBoard playersBoard;
     private boolean playersTurn;
     private int timer;
     // 0 = setup | 1 = game phase | 2 = end phase
@@ -21,7 +21,7 @@ public class BattleShipGameState {
 
 
     // basic constructor
-    public BattleShipGameState(String playerID, board playersBoard, boolean playersTurn, int timer,
+    public BattleShipGameState(String playerID, GameBoard playersBoard, boolean playersTurn, int timer,
                                int phase, int remainingShips) {
         this.playerID = playerID;
         this.playersBoard = playersBoard;
@@ -34,7 +34,7 @@ public class BattleShipGameState {
     // deep copy constructor
     public BattleShipGameState(BattleShipGameState copy) {
         this.playerID = copy.playerID;
-        this.playersBoard = new board(copy.playersBoard);
+        this.playersBoard = new GameBoard(copy.playersBoard);
         this.playersTurn = copy.playersTurn;
         this.timer = copy.timer;
         this.phase = copy.phase;

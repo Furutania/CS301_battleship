@@ -97,7 +97,7 @@
                 android:textColor="@color/black"
                 android:textSize="40dp" />
 
-            <com.example.cs301_battleship.playerBoard
+            <com.example.cs301_battleship.DrawPlayerBoard
                 android:id="@+id/surfaceView"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
@@ -134,7 +134,7 @@
                     android:textColor="@color/black"
                     android:textSize="40dp" />
 
-                <com.example.cs301_battleship.EnemyBoard
+                <com.example.cs301_battleship.DrawEnemyBoard
                     android:id="@+id/enemyBoard"
                     android:layout_width="600dp"
                     android:layout_height="600dp"
@@ -142,7 +142,7 @@
 
             </LinearLayout>
 
-            <com.example.cs301_battleship.drawFloatingShips
+            <com.example.cs301_battleship.DrawFloatingShips
                 android:id="@+id/floatingShips"
                 android:layout_width="100dp"
                 android:layout_height="600dp"
