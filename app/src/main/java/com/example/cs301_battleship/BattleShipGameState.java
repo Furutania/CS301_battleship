@@ -103,7 +103,10 @@ public class BattleShipGameState {
      * @param col - a given column coord on the board.
      * @return true or false depending on whether the move is valid
      */
-    public boolean canFire(int row, int col) {
+    public boolean canFire(Coordinates coord) {
+        int row = coord.getX();
+        int col = coord.getY();
+
         boolean isHit = this.playersBoard.getCoordHit(row, col);
         if (isHit == true) {
             return false;
