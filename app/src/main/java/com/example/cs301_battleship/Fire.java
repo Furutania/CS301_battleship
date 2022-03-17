@@ -5,5 +5,4 @@ public class Fire extends GameAction {
     public Fire(GamePlayer player) {
         super(player);
     }
-
 }
