@@ -205,7 +205,7 @@ public class BattleShipGameState {
             playersFleet[1][i] = new BattleshipObj(playerOneShips[i]);
         }
     }
-        //
+
     /**
      * touchToCoords - Converts the coordinates of the touch to a square on the grid of the enemy player
      * @param x - x coordinates of the touch
