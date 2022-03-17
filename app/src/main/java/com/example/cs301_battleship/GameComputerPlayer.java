@@ -1,6 +1,10 @@
 package com.example.cs301_battleship;
 
 public class GameComputerPlayer implements GamePlayer {
+
+    public GameComputerPlayer() {
+
+    }
     @Override
     public void gameSetAsGui(MainActivity activity) {
 
@@ -30,4 +34,10 @@ public class GameComputerPlayer implements GamePlayer {
     public boolean supportsGui() {
         return false;
     }
+
+    protected void receiveInfo(BattleShipGameState info) {
+
+    }
+
+
 }
