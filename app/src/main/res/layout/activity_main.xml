@@ -121,7 +121,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="100dp"
+                android:layout_margin="20dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -136,25 +136,32 @@
 
                 <com.example.cs301_battleship.DrawEnemyBoard
                     android:id="@+id/enemyBoard"
-                    android:layout_width="600dp"
-                    android:layout_height="600dp"
+                    android:layout_width="750dp"
+                    android:layout_height="750dp"
                     android:layout_gravity="center" />
 
             </LinearLayout>
 
-            <com.example.cs301_battleship.DrawFloatingShips
-                android:id="@+id/floatingShips"
-                android:layout_width="100dp"
-                android:layout_height="600dp"
-                android:layout_gravity="center" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/pause"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:backgroundTint="#FF5722"
-                android:text="||" />
+                <Button
+                    android:id="@+id/pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#FF5722"
+                    android:text="||" />
+
+                <com.example.cs301_battleship.DrawFloatingShips
+                    android:id="@+id/floatingShips"
+                    android:layout_width="100dp"
+                    android:layout_height="600dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="50dp" />
+            </LinearLayout>
 
         </LinearLayout>
 
