@@ -12,44 +12,52 @@ import android.util.Log;
  * @author Tyler Santos
  * @version Spring 2022 - 2/22/22
  */
-//hi
+
+
 public class BattleshipObj {
-    private int size;
-    private boolean sunk;
-    private Coordinates[] location = new Coordinates[size];
+    private int size; //the size of this battleship
+    private boolean sunk; //boolean that states whether this battleship has been sunk
+    private Coordinates[] location; //the location of this battleship
 
     /**
-     * Creates a battleShip Obj and sets the size and location
-     * @param size
-     * @param location
+     * BattleshipObj - Basic constructor that initializes the instance variables with
+     * arguments.
+     * @param size - the size of the ship
+     * @param location - the location of the ship on the board
      */
     public BattleshipObj(int size, Coordinates[] location){
         this.size = size;
         this.sunk = false;
+        this.location = new Coordinates[size];
+        Log.i("in battleship", "BEFORE LOOP");
         int i;
         for(i = 0; i < location.length; i++){
+            Log.i("in battleship", "" + i);
             this.location[i] = new Coordinates(location[i]);
         }
     }
 
     /**
-     * Creates a copy of the Battleship Obj
+     * BattleshipObj - A copy constructor of a BattleshipObj
      * @param orig
      */
     public BattleshipObj(BattleshipObj orig){
         this.size = orig.size;
         this.sunk = orig.sunk;
+
         int i;
-        for(i = 0; i < location.length; i++){
+        Log.i("in BSOBJ", "BattleshipObj: ");
+        this.location = new Coordinates[orig.location.length];
+        for(i = 0; i < orig.location.length; i++){
+            Log.i("in BSOBJ", "BattleshipObj: " + i);
             this.location[i] = new Coordinates(orig.location[i]);
         }
     }
 
     /**
-     * checks if all the coodinates of the ship has been hit,
-     * If it is than sets the to sunk and returns true
-     * @param ship
-     * @return boolean
+     * checkIfSunk - Checks if this battleship has been sunk
+     * @param ship - a given battleship
+     * @return true or false depending on whether a battleship has been hit
      */
     public boolean checkIfSunk(BattleshipObj ship){
         int i;
@@ -64,10 +72,7 @@ public class BattleshipObj {
     }
 
 
-    /**
-     * getters and setters
-     * @return
-     */
+
     public int getSize() {
         return size;
     }
