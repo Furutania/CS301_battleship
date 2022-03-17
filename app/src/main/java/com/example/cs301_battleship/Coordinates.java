@@ -109,6 +109,7 @@ public class Coordinates {
     /**
      * getHasShip - returns the boolean value stating whether a ship
      * is on this Coordinate.
+     * Updated
      * @return the hasShip instance variable
      */
     public boolean getHasShip(){
