@@ -9,7 +9,7 @@ public interface GamePlayer {
     public abstract void setAsGui(MainActivity activity);
 
     // sends a message to the player
-    public abstract void sendInfo(BattleShipGameState info);
+    public abstract void sendInfo(GameInfo info);
 
     // start the player
     public abstract void start();

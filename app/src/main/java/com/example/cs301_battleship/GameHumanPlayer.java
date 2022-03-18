@@ -13,7 +13,7 @@ public class GameHumanPlayer implements GamePlayer {
     }
 
     @Override
-    public void sendInfo(BattleShipGameState info) {
+    public void sendInfo(GameInfo info) {
 
     }
 

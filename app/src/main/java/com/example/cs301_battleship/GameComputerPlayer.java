@@ -16,7 +16,7 @@ public class GameComputerPlayer implements GamePlayer {
     }
 
     @Override
-    public void sendInfo(BattleShipGameState info) {
+    public void sendInfo(GameInfo info) {
 
     }
 

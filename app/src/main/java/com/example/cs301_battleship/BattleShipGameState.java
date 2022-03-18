@@ -103,7 +103,9 @@ public class BattleShipGameState {
      * @param col - a given column coord on the board.
      * @return true or false depending on whether the move is valid
      */
-    public boolean canFire(int row, int col) {
+    public boolean canFire(Coordinates coord) {
+        int row = coord.getX();
+        int col = coord.getY();
 
         boolean isHit = this.playersBoard.getCoordHit(row, col);
         if (isHit == true) {
@@ -204,16 +206,6 @@ public class BattleShipGameState {
         for(int i = 0; i < playerOneShips.length; i++){
             playersFleet[1][i] = new BattleshipObj(playerOneShips[i]);
         }
-    }
-
-    /**
-     * touchToCoords - Converts the coordinates of the touch to a square on the grid of the enemy player
-     * @param x - x coordinates of the touch
-     * @param y - y coordinates of the touch
-     */
-
-    public Coordinates touchToCoords(float x, float y) {
-
     }
 
 
