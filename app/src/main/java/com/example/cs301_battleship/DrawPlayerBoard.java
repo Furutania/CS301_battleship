@@ -9,9 +9,12 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
+import java.util.ArrayList;
+
 public class DrawPlayerBoard extends SurfaceView {
 
     private Paint blackPaint = new Paint();
+
 
 
     public DrawPlayerBoard(Context context) {//default constructor,
@@ -65,6 +68,7 @@ public class DrawPlayerBoard extends SurfaceView {
          Solution: I used the example code from this post.
          */
 
+        fivehp = Bitmap.createBitmap(fivehp, 0, 0, fivehp.getWidth(), fivehp.getHeight(), matrix, true);
         fivehp = Bitmap.createBitmap(fivehp, 0, 0, fivehp.getWidth(), fivehp.getHeight(), matrix, true);
         //CREATES 4 hp BS #1
         Bitmap fourhp1 = BitmapFactory.decodeResource(getResources(), R.drawable.fourhpbs);

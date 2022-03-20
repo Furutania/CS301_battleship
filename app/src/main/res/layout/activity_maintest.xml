@@ -2,13 +2,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/battleshipbackground"
-    android:orientation="horizontal">
+    android:background="@drawable/battleshipbackground">
 
-    <com.example.cs301_battleship.DrawMidgame
+    <com.example.cs301_battleship.DrawSetup
         android:id="@+id/surfaceView"
-        android:layout_width="match_parent"
+        android:layout_width="1210dp"
         android:layout_height="match_parent"
 
         />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button" />
 </LinearLayout>

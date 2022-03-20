@@ -4,7 +4,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-public abstract class LocalGame {
     /**
      * A class that knows how to play the game. The data in this class represent the
      * state of a game. The state represented by an instance of this class can be a
@@ -435,11 +434,10 @@ public abstract class LocalGame {
          *
          * @return GameState
          */
-        @Override
+
         public GameState getGameState() {
             return state;
         }
 
 
     }
-}

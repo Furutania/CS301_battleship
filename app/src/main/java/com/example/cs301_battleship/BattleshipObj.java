@@ -1,5 +1,6 @@
 package com.example.cs301_battleship;
 
+import android.graphics.Bitmap;
 import android.util.Log;
 
 /**
@@ -19,6 +20,7 @@ public class BattleshipObj {
     private boolean sunk; //boolean that states whether this battleship has been sunk
     private Coordinates[] location; //the location of this battleship
 
+
     /**
      * BattleshipObj - Basic constructor that initializes the instance variables with
      * arguments.
@@ -28,11 +30,9 @@ public class BattleshipObj {
     public BattleshipObj(int size, Coordinates[] location){
         this.size = size;
         this.sunk = false;
-        this.location = new Coordinates[size];
         Log.i("in battleship", "BEFORE LOOP");
         int i;
-        for(i = 0; i < location.length; i++){
-            Log.i("in battleship", "" + i);
+        for(i = 0; i < location.length; i++){;
             this.location[i] = new Coordinates(location[i]);
         }
     }
