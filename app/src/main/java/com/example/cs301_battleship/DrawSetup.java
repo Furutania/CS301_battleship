@@ -50,19 +50,6 @@ public class DrawSetup extends SurfaceView {
         Matrix matrix = new Matrix();
         matrix.postRotate(90);
 
-        //FLOAT - like a double but half the number of bits
-        //drawOval(x,y x2, y2, paint);
-        //When user hits a ship a red marker will be placed
-        Bitmap redMarker = BitmapFactory.decodeResource(getResources(), R.drawable.hitmarker);
-        redMarker =  Bitmap.createScaledBitmap(redMarker, 300, 250, false);
-
-        //A missed shot will be indicated with a white marker
-        Bitmap whiteMarker = BitmapFactory.decodeResource(getResources(), R.drawable.missmarker);
-        whiteMarker =  Bitmap.createScaledBitmap(whiteMarker, 300, 250, false);
-
-        //When the user selects their move the COOR will be identified with a target
-        Bitmap userSelection = BitmapFactory.decodeResource(getResources(), R.drawable.tagetselector);
-        userSelection =  Bitmap.createScaledBitmap(userSelection, 200, 150, false);
 
 
         /**Creating the battle ships
