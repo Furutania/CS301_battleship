@@ -200,10 +200,10 @@ public class BattleShipGameState {
      */
     public void setPlayersFleet(BattleshipObj[] playerOneShips, BattleshipObj[] playerZeroShips){
         for(int i = 0; i < playerZeroShips.length; i++){
-            playersFleet[0][i] = new BattleshipObj(playerZeroShips[i]);
+            this.playersFleet[0][i] = new BattleshipObj(playerZeroShips[i]);
         }
         for(int i = 0; i < playerOneShips.length; i++){
-            playersFleet[1][i] = new BattleshipObj(playerOneShips[i]);
+            this.playersFleet[1][i] = new BattleshipObj(playerOneShips[i]);
         }
     }
 
