@@ -39,7 +39,7 @@ public class BattleShipGameState {
         this.timer = 30;
         //Log.i("BSG", "Made timer");
         this.remainingShips = 6;
-        this.playersFleet = new BattleshipObj[playerID.length][6];
+        this.playersFleet = new BattleshipObj[2][6];
         //Log.i("BSG", "fleet");
     }
 
@@ -130,7 +130,7 @@ public class BattleShipGameState {
             if (toPlace[i].getX() <= 10 && toPlace[i].getY() <= 10 &&
                     toPlace[i].getX() >= 1 && toPlace[i].getY() >= 1) {
                 ship.setLocation(toPlace);
-                //this.printPlaceShip(toPlace, true);
+
                 return true;
             }
         }
@@ -200,10 +200,10 @@ public class BattleShipGameState {
      */
     public void setPlayersFleet(BattleshipObj[] playerOneShips, BattleshipObj[] playerZeroShips){
         for(int i = 0; i < playerZeroShips.length; i++){
-            playersFleet[0][i] = new BattleshipObj(playerZeroShips[i]);
+            this.playersFleet[0][i] = new BattleshipObj(playerZeroShips[i]);
         }
         for(int i = 0; i < playerOneShips.length; i++){
-            playersFleet[1][i] = new BattleshipObj(playerOneShips[i]);
+            this.playersFleet[1][i] = new BattleshipObj(playerOneShips[i]);
         }
     }
 

@@ -30,6 +30,7 @@ public class BattleshipObj {
     public BattleshipObj(int size, Coordinates[] location){
         this.size = size;
         this.sunk = false;
+        this.location = new Coordinates[this.size];
         //Log.i("in battleship", "BEFORE LOOP");
         int i;
         for(i = 0; i < location.length; i++){;
@@ -90,6 +91,9 @@ public class BattleshipObj {
         this.sunk = sunk;
     }
     public void setLocation(Coordinates[] location) {
-        this.location = location;
+        int i;
+        for(i = 0; i < this.location.length; i++) {
+            this.location[i] = new Coordinates(location[i]);
+        }
     }
 }

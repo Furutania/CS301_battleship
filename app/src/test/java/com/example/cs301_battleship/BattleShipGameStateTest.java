@@ -32,7 +32,7 @@ public class BattleShipGameStateTest {
             coords[i].setX(5 + i);
             coords[i].setY(5);
         }
-        BattleshipObj battleship = new BattleshipObj(2, coords);
+        BattleshipObj battleship = new BattleshipObj(5, coords);
 
         BattleshipObj[] fleet1 = {battleship,battleship,battleship,battleship,battleship,battleship};
         BattleshipObj[] fleet2 = {battleship,battleship,battleship,battleship,battleship,battleship};
