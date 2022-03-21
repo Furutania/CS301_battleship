@@ -1,4 +1,4 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.Drawings;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -8,6 +8,9 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
+
+import com.example.cs301_battleship.BattleshipObj;
+import com.example.cs301_battleship.R;
 
 import java.util.ArrayList;
 

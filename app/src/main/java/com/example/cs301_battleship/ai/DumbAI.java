@@ -1,6 +1,9 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.ai;
 
 import android.util.Log;
+
+import com.example.cs301_battleship.BattleShipGameState;
+import com.example.cs301_battleship.GameComputerPlayer;
 
 import java.util.Random;
 

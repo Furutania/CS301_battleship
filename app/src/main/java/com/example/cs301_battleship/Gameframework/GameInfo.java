@@ -1,4 +1,6 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.Gameframework;
+
+import com.example.cs301_battleship.Gameframework.Game;
 
 import java.io.Serializable;
 

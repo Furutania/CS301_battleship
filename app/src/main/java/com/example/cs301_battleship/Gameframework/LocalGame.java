@@ -1,10 +1,18 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.Gameframework;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-    /**
+import com.example.cs301_battleship.GameAction.GameOverAckAction;
+import com.example.cs301_battleship.GameAction.MyNameIsAction;
+import com.example.cs301_battleship.GameAction.ReadyAction;
+import com.example.cs301_battleship.GamePlayer;
+import com.example.cs301_battleship.GameState;
+import com.example.cs301_battleship.GameAction.Tickable;
+import com.example.cs301_battleship.GameAction.TimerAction;
+
+/**
      * A class that knows how to play the game. The data in this class represent the
      * state of a game. The state represented by an instance of this class can be a
      * complete state (as might be used by the main game activity) or a partial

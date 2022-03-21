@@ -1,5 +1,7 @@
 package com.example.cs301_battleship;
 
+import com.example.cs301_battleship.Gameframework.GameInfo;
+
 /**
  * The state of the game. This class should be subclassed so that it holds
  * all state information for the particular game being implemented. For

@@ -1,5 +1,7 @@
 package com.example.cs301_battleship;
 
+import com.example.cs301_battleship.Gameframework.GameInfo;
+
 public class GameComputerPlayer implements GamePlayer {
 
     public GameComputerPlayer() {

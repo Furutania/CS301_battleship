@@ -1,5 +1,7 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.Gameframework;
 
+
+import com.example.cs301_battleship.GameAction.Tickable;
 
 /**
  * A GameTimer is an object that sends a GameTimerAction to a Game or a

@@ -1,4 +1,4 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.Gameframework;
 
 /**
  * A message from the game to a player that tells the player:

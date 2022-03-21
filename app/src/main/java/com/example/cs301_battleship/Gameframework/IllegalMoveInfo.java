@@ -1,4 +1,6 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.Gameframework;
+
+import com.example.cs301_battleship.Gameframework.GameInfo;
 
 /**
  * The a message from the game to a player that the move just attempted

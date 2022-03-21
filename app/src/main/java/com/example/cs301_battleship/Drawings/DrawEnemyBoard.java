@@ -1,29 +1,31 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.Drawings;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.Picture;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
-public class DrawMidgame extends SurfaceView{
+
+import com.example.cs301_battleship.R;
+
+public class DrawEnemyBoard extends SurfaceView{
 
     private Paint blackPaint = new Paint();
 
-    public DrawMidgame(Context context) {//default constructor,
+    public DrawEnemyBoard(Context context) {//default constructor,
         super(context);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public DrawMidgame(Context context, AttributeSet attirs){
+    public DrawEnemyBoard(Context context, AttributeSet attirs){
         super(context, attirs);
         initPaints();
         setWillNotDraw(false);//sets visible
     }
 
-    public DrawMidgame(Context context, AttributeSet attirs, int defStyle){
+    public DrawEnemyBoard(Context context, AttributeSet attirs, int defStyle){
         super(context, attirs, defStyle);
         initPaints();
         setWillNotDraw(false);//sets visible
@@ -43,18 +45,11 @@ public class DrawMidgame extends SurfaceView{
         //drawOval(x,y x2, y2, paint);
 
         //
-        Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.battleshipbackground);
-        background = Bitmap.createScaledBitmap(background, getWidth(), getHeight(), false);
+        canvas.drawRect(0.0f, 0.0f, 50.0f, 50.f, blackPaint);
 
         //Draws the board for the use will use to select and play their move
         Bitmap grid = BitmapFactory.decodeResource(getResources(), R.drawable.updatedgrid);
-        grid =  Bitmap.createScaledBitmap(grid, 1000, 1000, false);
-        Bitmap playersGrid =  Bitmap.createScaledBitmap(grid, 400, 400, false);
-
-        Bitmap remainingShips = BitmapFactory.decodeResource(getResources(), R.drawable.ships);
-        remainingShips = Bitmap.createScaledBitmap(remainingShips, 150, 1000, false);
-
-
+        grid =  Bitmap.createScaledBitmap(grid, 1500, 1500, false);
 
         //When user hits a ship a red marker will be placed
         Bitmap redMarker = BitmapFactory.decodeResource(getResources(), R.drawable.hitmarker);
@@ -69,17 +64,20 @@ public class DrawMidgame extends SurfaceView{
         userSelection =  Bitmap.createScaledBitmap(userSelection, 200, 150, false);
 
 
+        Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.battleshipbackground);
+        background = Bitmap.createScaledBitmap(background, getWidth(), getHeight(), false);
+
+
+
         /**
          * Draws everything to surface view, as of now COOR is just giberish and guess work, will work out
          *a formula later
          */
         canvas.drawBitmap(background, 0.0f, 0.0f, new Paint());
-        canvas.drawBitmap(grid, 550.0f, 25.0f, new Paint());
-        canvas.drawBitmap(playersGrid, 50.0f, 700.0f, new Paint());
-        canvas.drawBitmap(remainingShips, 1800.0f, 25.0f, new Paint());
-//        canvas.drawBitmap(whiteMarker, 150.0f, 290.0f, new Paint());
-//        canvas.drawBitmap(redMarker, 490.0f, 290.0f, new Paint());
-//        canvas.drawBitmap(userSelection, 540.0f, 450.0f, new Paint());
+        canvas.drawBitmap(grid, 0.0f, 0.0f, new Paint());
+        canvas.drawBitmap(whiteMarker, 150.0f, 290.0f, new Paint());
+        canvas.drawBitmap(redMarker, 490.0f, 290.0f, new Paint());
+        canvas.drawBitmap(userSelection, 540.0f, 450.0f, new Paint());
     }
 
 }

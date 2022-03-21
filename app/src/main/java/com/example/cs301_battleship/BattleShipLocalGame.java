@@ -1,6 +1,9 @@
 package com.example.cs301_battleship;
 
-public class BattleShipLocalGame extends LocalGame{
+import com.example.cs301_battleship.Gameframework.GameAction;
+import com.example.cs301_battleship.Gameframework.LocalGame;
+
+public class BattleShipLocalGame extends LocalGame {
     @Override
     protected void sendUpdatedStateTo(GamePlayer p) {
 

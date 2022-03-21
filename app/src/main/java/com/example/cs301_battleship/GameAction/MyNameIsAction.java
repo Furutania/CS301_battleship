@@ -1,5 +1,8 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.GameAction;
 
+
+import com.example.cs301_battleship.GamePlayer;
+import com.example.cs301_battleship.Gameframework.GameAction;
 
 /**
  * An action by which the player tells the game its name

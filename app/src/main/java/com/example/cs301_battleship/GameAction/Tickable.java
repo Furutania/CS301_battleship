@@ -1,4 +1,6 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.GameAction;
+
+import com.example.cs301_battleship.Gameframework.GameTimer;
 
 /**
  * An inteface that defines an object that can respond to a GameTimer "tick".

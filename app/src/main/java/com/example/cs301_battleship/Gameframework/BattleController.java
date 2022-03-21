@@ -1,4 +1,4 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.Gameframework;
 
 import android.view.MotionEvent;
 import android.view.View;
