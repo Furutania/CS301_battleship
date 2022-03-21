@@ -22,7 +22,7 @@ public class DumbAI extends GameComputerPlayer {
 
         info.printFire(row, col, true);
         Log.i("randomFire", "Fired at " + row + " " + col + "." );
-
+    //bruh
 
     }
 
