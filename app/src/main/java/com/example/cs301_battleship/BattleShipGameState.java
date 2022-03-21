@@ -30,17 +30,17 @@ public class BattleShipGameState {
      */
     public BattleShipGameState(){
         this.playerID = new int[]{0,1};
-        Log.i("BSG", "Made playerID");
+        //Log.i("BSG", "Made playerID");
         this.playersBoard = new GameBoard();
-        Log.i("BSG", "Made gameBoard");
+        //Log.i("BSG", "Made gameBoard");
         int num = (int) Math.random() * 1;
         this.playersTurn = num;
-        Log.i("BSG", "Made player turn");
+        //Log.i("BSG", "Made player turn");
         this.timer = 30;
-        Log.i("BSG", "Made timer");
+        //Log.i("BSG", "Made timer");
         this.remainingShips = 6;
         this.playersFleet = new BattleshipObj[playerID.length][6];
-        Log.i("BSG", "fleet");
+        //Log.i("BSG", "fleet");
     }
 
     /**
@@ -84,14 +84,14 @@ public class BattleShipGameState {
 
         int i;
         int j;
-        Log.i("Test", "before Players fleet for loop");
+        //Log.i("Test", "before Players fleet for loop");
         for (i = 0;  i < playerID.length; i++) {
             for (j = 0;j < 6; j++) {
-                Log.i("Test", i + " " + j);
+                //Log.i("Test", i + " " + j);
                 this.playersFleet[i][j] = new BattleshipObj(copy.playersFleet[i][j]);
             }
         }
-        Log.i("Test", "after Players fleet for loop");
+        //Log.i("Test", "after Players fleet for loop");
 
     }
 
@@ -99,8 +99,7 @@ public class BattleShipGameState {
      * canFire - a method that let's a player fire at a specific coordinate. If it
      * returns true, the player can fire and will set the coordinate as if it were hit.
      * If it returns false, the player can't fire.
-     * @param row - a given row coord on the board
-     * @param col - a given column coord on the board.
+     * @param coord - the coordinate where the player wants to fire at
      * @return true or false depending on whether the move is valid
      */
     public boolean canFire(Coordinates coord) {
@@ -219,6 +218,10 @@ public class BattleShipGameState {
             return "It is Player " + playerID[this.playersTurn] + "'s turn. They have " + remainingShips + " remaining ships.";
         }
         return "It is not " + playerID[this.playersTurn] + "'s turn.";
+    }
+
+    public GameBoard getBoard() {
+        return this.playersBoard;
     }
 
 
