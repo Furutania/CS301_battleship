@@ -49,7 +49,7 @@ public class BattleShipGameStateTest {
 
         boolean fire = gameState.canFire(coord);
         GameBoard playersBoard = gameState.getBoard();
-        boolean hitCoord = playersBoard.getHit();
+        boolean hitCoord = playersBoard.getCoordHit(4, 5);
         assertTrue(fire);
         assertTrue(hitCoord);
     }
