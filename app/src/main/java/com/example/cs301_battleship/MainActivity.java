@@ -22,14 +22,12 @@ public class MainActivity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                configureNextButton();
+                Intent switchActivityIntent = new Intent(MainActivity.this, SecondMainActivity.class);
+                switchActivityIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(switchActivityIntent);
             }
         });
     }
     //test
 
-    private void configureNextButton() {
-        Intent switchActivityIntent = new Intent(this, SecondMainActivity.class);
-        startActivity(switchActivityIntent);
-    }
 }
