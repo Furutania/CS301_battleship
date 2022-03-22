@@ -99,8 +99,7 @@ public class BattleShipGameState {
      * canFire - a method that let's a player fire at a specific coordinate. If it
      * returns true, the player can fire and will set the coordinate as if it were hit.
      * If it returns false, the player can't fire.
-     * @param row - a given row coord on the board
-     * @param col - a given column coord on the board.
+     * @param coord - stores a Coordinates object
      * @return true or false depending on whether the move is valid
      */
     public boolean canFire(Coordinates coord) {
