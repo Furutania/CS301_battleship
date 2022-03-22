@@ -1,11 +1,6 @@
-package com.example.cs301_battleship.ai;
-
-import android.util.Log;
+package com.example.cs301_battleship.players;
 
 import com.example.cs301_battleship.BattleShipGameState;
-import com.example.cs301_battleship.GameComputerPlayer;
-
-import java.util.Random;
 
 public class SmartAI extends GameComputerPlayer {
 

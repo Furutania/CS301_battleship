@@ -1,5 +1,6 @@
 package com.example.cs301_battleship;
 
+import android.app.GameManager;
 import android.util.Log;
 
 //import androidx.appcompat.widget.AppCompatRadioButton$InspectionCompanion;
@@ -14,7 +15,7 @@ import android.util.Log;
  * @author Tyler Santos
  * @version Spring 2022 - 2/22/22
  */
-public class BattleShipGameState {
+public class BattleShipGameState extends GameState {
     private int[] playerID; //an array of each player's ID
     private GameBoard playersBoard; //the Battleship game board
     private int playersTurn; //determines who's turn it is
@@ -222,6 +223,11 @@ public class BattleShipGameState {
 
     public GameBoard getBoard() {
         return this.playersBoard;
+    }
+
+
+    public int getPlayersTurn(){
+        return this.playersTurn;
     }
 
 

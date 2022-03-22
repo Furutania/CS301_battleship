@@ -1,7 +1,7 @@
 package com.example.cs301_battleship.GameAction;
 
 
-import com.example.cs301_battleship.GamePlayer;
+import com.example.cs301_battleship.players.GamePlayer;
 import com.example.cs301_battleship.Gameframework.GameAction;
 
 /**

@@ -1,9 +1,15 @@
-package com.example.cs301_battleship;
+package com.example.cs301_battleship.players;
 
+import com.example.cs301_battleship.BattleShipGameState;
 import com.example.cs301_battleship.Gameframework.GameInfo;
+import com.example.cs301_battleship.MainActivity;
+import com.example.cs301_battleship.players.GamePlayer;
 
-public class GameHumanPlayer implements GamePlayer {
+public class GameComputerPlayer implements GamePlayer {
 
+    public GameComputerPlayer() {
+
+    }
     @Override
     public void gameSetAsGui(MainActivity activity) {
 
@@ -33,4 +39,10 @@ public class GameHumanPlayer implements GamePlayer {
     public boolean supportsGui() {
         return false;
     }
+
+    protected void receiveInfo(BattleShipGameState info) {
+
+    }
+
+
 }

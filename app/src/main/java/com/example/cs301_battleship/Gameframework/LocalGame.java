@@ -7,7 +7,7 @@ import android.os.Message;
 import com.example.cs301_battleship.GameAction.GameOverAckAction;
 import com.example.cs301_battleship.GameAction.MyNameIsAction;
 import com.example.cs301_battleship.GameAction.ReadyAction;
-import com.example.cs301_battleship.GamePlayer;
+import com.example.cs301_battleship.players.GamePlayer;
 import com.example.cs301_battleship.GameState;
 import com.example.cs301_battleship.GameAction.Tickable;
 import com.example.cs301_battleship.GameAction.TimerAction;
