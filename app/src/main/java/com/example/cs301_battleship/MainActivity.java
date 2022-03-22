@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    //test
 
     private void configureNextButton() {
         Intent switchActivityIntent = new Intent(this, SecondMainActivity.class);
