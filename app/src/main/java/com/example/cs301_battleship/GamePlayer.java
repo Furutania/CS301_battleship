@@ -1,5 +1,7 @@
 package com.example.cs301_battleship;
 
+import com.example.cs301_battleship.Gameframework.GameInfo;
+
 public interface GamePlayer {
     // sets this player as the GUI player (implemented as final in the
     // major player classes)
