@@ -89,7 +89,7 @@ public class DrawSetup extends SurfaceView {
 
         //Set background
         Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.battleshipbackground);
-        background = Bitmap.createScaledBitmap(background, getWidth(), getHeight(), false);
+        background = Bitmap.createScaledBitmap(background, getWidth(), getHeight() - 4, false);
 
         //Draws the board for the use will use to select and play their move
         Bitmap grid = BitmapFactory.decodeResource(getResources(), R.drawable.updatedgrid);
