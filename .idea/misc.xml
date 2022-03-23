@@ -4,8 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Keoni/AndroidStudioProjects/CS301_battleship/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Keoni/AndroidStudioProjects/CS301_battleship/app/src/main/res/layout/midgame.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/Keoni/AndroidStudioProjects/CS301_battleship/app/src/main/res/layout/setup_phase.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/austf/AndroidStudioProjects/CS301_battleship/app/src/main/res/drawable/ic_launcher_background.xml" value="0.164453125" />
-        <entry key="..\:/Users/austf/AndroidStudioProjects/CS301_battleship/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/austf/AndroidStudioProjects/CS301_battleship/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/austf/AndroidStudioProjects/CS301_battleship/app/src/main/res/layout/activity_maintest.xml" value="0.1" />
         <entry key="..\:/Users/austf/AndroidStudioProjects/CS301_battleship/app/src/main/res/layout/mid_game.xml" value="0.17890625" />

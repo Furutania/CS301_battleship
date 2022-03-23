@@ -1,5 +1,7 @@
 package com.example.cs301_battleship;
 
+import android.util.Log;
+
 /**
  * coordinates - A representation of the coordinates on a Battleship board.
  *
@@ -116,6 +118,20 @@ public class Coordinates {
         return this.hasShip;
     }
 
+    /**
+     * xyToCoords - returns the coordinate object on board given two floats
+     * x and y of the touch
+     * x and y dimensions of the screen
+     * Updated
+     * @return the coordinate object on board
+     */
+    public Coordinates xyToCoords(float x, float y) {
+        float blockHeight = 76.02538f;
+        float blockWidth = 0.0f;
+
+
+        return new Coordinates(true, true, 1, 1);
+    }
 
 
 }
